@@ -19,6 +19,8 @@ Dependencies:
     inquirer@8.2.4
   
   ## Usage
+
+  [Walkthrough video](https://drive.google.com/file/d/1kr0VrIOGt9AP4ISp13ixkv80ON8cndje/view?usp=sharing)
   
     
 ![code running in terminal](assets/images/terminalExample.png)
