@@ -33,6 +33,6 @@ Dependencies:
   ## Questions
   
   
-  [Github](www.github.com/tdavids215)
+  [Github](https://www.github.com/tdavids215)
   
-  e-mail: (tdavids215@gmail.com)
+  e-mail: tdavids215@gmail.com

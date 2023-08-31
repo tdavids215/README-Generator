@@ -99,9 +99,9 @@ function generateMarkdown(data) {
   ## Questions
   
   
-  [Github](www.github.com/${data.github})
+  [Github](https://www.github.com/${data.github})
   
-  email: (${data.email})
+  email: ${data.email}
 `;
 }
 
