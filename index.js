@@ -1,7 +1,7 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require('inquirer');
-const fs = rquire('fs');
-// TODO: Create an array of questions for user input
+const fs = require('fs');
+// an array of questions for user input
 const questions = [
     inquirer.prompt([
         
@@ -35,17 +35,27 @@ const questions = [
             type: 'list',
             name: 'license',
             message: 'Which license would you like to include?',
-            choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'],
+            choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense', 'no license'],
         },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your github username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email?',
+        }
         
        
-        ['Usage']
-        ['Credits']
-        ['Which license would you like to include (if none, leave blank).']
-        ['Badges']
-        ['Features']
-        ['How to Contribute']
-        ['Tests']
+        // ['Usage']
+        // ['Credits']
+        // ['Which license would you like to include (if none, leave blank).']
+        // ['Badges']
+        // ['Features']
+        // ['How to Contribute']
+        // ['Tests']
         // github
         // email
         // add these to the section entitle Questions with instructions on how to reach me with additional questions

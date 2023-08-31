@@ -1,8 +1,8 @@
-# ${title}
+# ${data.title}
 
 ## Description
 
-${description}
+${data.description}
 
 ## Table of Content
 
@@ -14,19 +14,19 @@ ${description}
 
 ## Installation
 
-${installation}
+${data.installation}
 
 ## Usage
 
-${usage}
+${data.usage}
 
 ## Credits
 
-${credits}
+${data.credits}
 
 ## License
 
-${license}
+${data.license}
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

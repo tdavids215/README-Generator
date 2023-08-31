@@ -1,6 +1,12 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+// function renderLicenseBadge(license) {
+  
+// }
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) { 
   switch (license) {
     case 'Apache License 2.0':
       return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
@@ -45,24 +51,55 @@ function renderLicenseBadge(license) {
       return 'no license';
       break;
   }
+   
 }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-const renderLicenseSection = (license) =>
-  `## License
+const renderLicenseSection = (license) => (!license || license === 'no license') ?  "" : `${renderLicenseLink(license)}`
+//   `## License
 
- ${license}`
+//  ${license}`
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
 
+## Description
+
+${data.description}
+
+## Table of Content
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Questions](#questions)
+
+## Installation
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+## Credits
+
+${data.credits}
+
+## License
+
+${renderLicenseSection(data.license)}
+
+## Questions
+
+${github}
+${email}
 `;
 }
 
 module.exports = generateMarkdown;
+
