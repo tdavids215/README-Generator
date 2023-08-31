@@ -1,40 +1,41 @@
- # ${data.title}
-
-## Description
-
-${data.description}
-
-## Table of Content
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-- [Questions](#questions)
-
-## Installation
-
-${data.installation}
-
-## Usage
-
-${data.usage}
-
-## Credits
-
-${data.credits}
-
-## License
-
-${renderLicenseSection(data.license)}
-
-## Tests
-
-${data.tests}
-
-## Questions
-
-
-[Github](github.com/${data.github})
-
-[e-mail](${data.email})
+  # ${data.title}
+  ${renderLicenseSection(data.license)}
+  ## Description
+  
+  ${data.description}
+  
+  ## Table of Content
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+  ## Installation
+  
+  ${data.installation}
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ## Contributing
+  
+  ${data.credits}
+  
+  ## License
+  
+  This application is covered under the ${data.license}.
+  
+  ## Tests
+  
+  ${data.tests}
+  
+  ## Questions
+  
+  
+  [Github](github.com/${data.github})
+  
+  [e-mail](${data.email})

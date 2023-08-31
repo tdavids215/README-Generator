@@ -62,7 +62,7 @@ const renderLicenseSection = (license) => (!license || license === 'no license')
 function generateMarkdown(data) {
   return `
   # ${data.title}
-
+  ${renderLicenseSection(data.license)}
   ## Description
   
   ${data.description}
@@ -71,8 +71,9 @@ function generateMarkdown(data) {
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
+  - [Contributing](#contributing)
   - [License](#license)
+  - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
@@ -83,13 +84,13 @@ function generateMarkdown(data) {
   
   ${data.usage}
   
-  ## Credits
+  ## Contributing
   
   ${data.credits}
   
   ## License
   
-  ${renderLicenseSection(data.license)}
+  This application is covered under the ${data.license}.
   
   ## Tests
   

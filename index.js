@@ -6,8 +6,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // an array of questions for user input
 const questions = [
     
-
-        // something about things being case sensitive when you type them in? this might not be a prompt?
         {
             type: 'input',
             name: 'title',
@@ -31,7 +29,7 @@ const questions = [
         {
             type: 'input',
             name: 'credits',
-            message: 'Credits: List any collaborators, third-part assests or tutorials.',
+            message: 'Contributing: List any collaborators, third-party assests or tutorials.',
         },
         {
             type: 'input',
