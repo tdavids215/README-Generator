@@ -1,41 +1,38 @@
-  # ${data.title}
-  ${renderLicenseSection(data.license)}
+  # README generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
   
-  ${data.description}
+This application uses NODE.js and inquirer(npm) to create a REAME.md through command line prompts.
   
   ## Table of Content
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contributing)
   - [License](#license)
-  - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
-  
-  ${data.installation}
+  The README generator requires the installation of node.js and inquirer.
+
+Dependencies:
+
+    inquirer@8.2.4
   
   ## Usage
   
-  ${data.usage}
-  
-  ## Contributing
-  
-  ${data.credits}
+    
+![code running in terminal](assets/images/terminalExample.png)
+![list of licenses](assets/images/licenseList.png)
+
   
   ## License
   
-  This application is covered under the ${data.license}.
+  This application is covered under the MIT License.
   
-  ## Tests
-  
-  ${data.tests}
   
   ## Questions
   
   
-  [Github](github.com/${data.github})
+  [Github](github.com/tdavids215)
   
-  [e-mail](${data.email})
+  [e-mail](tdavids215@gmail.com)
