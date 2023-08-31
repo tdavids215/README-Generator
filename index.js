@@ -1,11 +1,13 @@
 // packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
+
 // an array of questions for user input
 const questions = [
-    inquirer.prompt([
-        
-            // something about things being case sensitive when you type them in? this might not be a prompt?
+    
+
+        // something about things being case sensitive when you type them in? this might not be a prompt?
         {
             type: 'input',
             name: 'title',
@@ -47,8 +49,8 @@ const questions = [
             name: 'email',
             message: 'What is your email?',
         }
-        
-       
+
+
         // ['Usage']
         // ['Credits']
         // ['Which license would you like to include (if none, leave blank).']
@@ -59,15 +61,24 @@ const questions = [
         // github
         // email
         // add these to the section entitle Questions with instructions on how to reach me with additional questions
-    ])
-
-];
+    ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('You have successfully created a README file'))
+
+
+
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        const markdownFile = generateMarkdown(answers);
+        writeToFile('README.md', markdownFile);
+    });
+}
 
 // Function call to initialize app
 init();

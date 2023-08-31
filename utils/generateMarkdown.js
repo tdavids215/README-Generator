@@ -1,12 +1,14 @@
 // function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 // function renderLicenseBadge(license) {
+//   (!license || license === 'no license') ? "" : license;
   
 // }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) { 
+   if (!license || license === 'no license') return "" ;
   switch (license) {
     case 'Apache License 2.0':
       return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
@@ -48,7 +50,7 @@ function renderLicenseLink(license) {
       return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
       break;
     default:
-      return 'no license';
+      return '';
       break;
   }
    
@@ -96,8 +98,9 @@ ${renderLicenseSection(data.license)}
 
 ## Questions
 
-${github}
-${email}
+
+[Github]github.com/${data.github}
+${data.email}
 `;
 }
 
