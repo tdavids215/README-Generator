@@ -1,4 +1,4 @@
-# ${data.title}
+ # ${data.title}
 
 ## Description
 
@@ -26,12 +26,11 @@ ${data.credits}
 
 ## License
 
-${data.license}
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[![License: LGPL v2.1](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](https://www.gnu.org/licenses/lgpl-2.1)
+${renderLicenseSection(data.license)}
 
 ## Questions
 
-% link to github and email here
+
+[Github](github.com/${data.github})
+
+[e-mail](${data.email})
