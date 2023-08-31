@@ -1,11 +1,6 @@
-// function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-// function renderLicenseBadge(license) {
-//   (!license || license === 'no license') ? "" : license;
-  
-// }
 
-// TODO: Create a function that returns the license link
+
+// Creates a function that returns the license badge and link
 // If there is no license, return an empty string
 function renderLicenseLink(license) { 
    if (!license || license === 'no license') return "" ;
@@ -56,7 +51,7 @@ function renderLicenseLink(license) {
    
 }
 
-// TODO: Create a function that returns the license section of README
+// function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = (license) => (!license || license === 'no license') ?  "" : `${renderLicenseLink(license)}`
 //   `## License
@@ -95,6 +90,10 @@ function generateMarkdown(data) {
   ## License
   
   ${renderLicenseSection(data.license)}
+  
+  ## Tests
+  
+  ${data.tests}
   
   ## Questions
   

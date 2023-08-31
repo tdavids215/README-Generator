@@ -28,6 +28,10 @@ ${data.credits}
 
 ${renderLicenseSection(data.license)}
 
+## Tests
+
+${data.tests}
+
 ## Questions
 
 

@@ -34,6 +34,11 @@ const questions = [
             message: 'Credits: List any collaborators, third-part assests or tutorials.',
         },
         {
+            type: 'input',
+            name: 'tests',
+            message: 'What tests did you include and how would someone run them?',
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'Which license would you like to include?',
@@ -51,19 +56,14 @@ const questions = [
         }
 
 
-        // ['Usage']
-        // ['Credits']
-        // ['Which license would you like to include (if none, leave blank).']
+        
+        
         // ['Badges']
         // ['Features']
         // ['How to Contribute']
-        // ['Tests']
-        // github
-        // email
-        // add these to the section entitle Questions with instructions on how to reach me with additional questions
     ];
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log('You have successfully created a README file'))
@@ -72,7 +72,7 @@ function writeToFile(fileName, data) {
 
 }
 
-// TODO: Create a function to initialize app
+// initialize app
 function init() {
     inquirer.prompt(questions).then((answers) => {
         const markdownFile = generateMarkdown(answers);
